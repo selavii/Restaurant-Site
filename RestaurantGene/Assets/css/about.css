@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.background-picture {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-picture img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    z-index: -10;
+}
+
+.entireinformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.firstpart {
+    display: flex;
+    flex-direction: column;
+    h1{
+        font-family: 'Bahnschrift', sans-serif;
+        font-family: 34px;
+    }
+}
+
+
+.firstpart span {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px; 
+}
+
+.secondpart{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+.icon i:hover {
+   opacity: 1;
+   transition: 1s ease;
+   transform: translateY(1px); 
+}
+
+.icon p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+.LearnMore {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px; 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    outline: none; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.LearnMore:hover {
+    background-color: #0056b3; 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.LearnMore:active {
+    transform: translateY(1px); 
+}

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.navigation-container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    background-color: rgba(250, 128, 114, 0.7);
+    padding: 3px;
+    z-index: 10;
+    height: 120px;
+    top: 0;
+}
+
+.navigation-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.navigation-logo {
+    max-height: 100px;
+    cursor: pointer;
+}
+
+.navigation-links a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 30px;
+    margin: 5px 10px;
+    color: white;
+    line-height: 100px; 
+    height: 100px;
+    display: inline-flex; 
+    align-items: center;
+}
+
+.navigation-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 1s ease;
+}
+
+.navigation-links a:hover::after {
+    width: 100%;
+}

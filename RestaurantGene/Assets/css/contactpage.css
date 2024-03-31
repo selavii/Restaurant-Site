@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%; 
+}
+
+.background-picture {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../images/tapiserie.jpg'), url('../images/tapiserie2.jpeg');
+    background-position: top left, bottom right; /* Adjust positioning as needed */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.navigation-container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    background-color: rgba(250, 128, 114, 0.7);
+    padding: 3px;
+    z-index: 10;
+    height: 120px;
+    top: 0;
+}
+
+.navigation-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.navigation-logo {
+    max-height: 100px;
+    cursor: pointer;
+}
+
+.navigation-links a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 30px;
+    margin: 5px 10px;
+    color: white;
+    line-height: 100px; 
+    height: 100px;
+    display: inline-flex; 
+    align-items: center;
+}
+
+.navigation-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 1s ease;
+}
+
+.navigation-links a:hover::after {
+    width: 100%;
+}
+
+
+.firstpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 100px;
+    height: auto; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 1; 
+}
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.form h2 {
+    font-size: 24px; 
+    margin-bottom: 20px;
+    font-size: 'Bahnschrift', sans-serif;
+}
+
+.contactus{
+    font-size: 24px; 
+    font-size: 'Bahnschrift', sans-serif;
+}
+
+.formular label {
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 18px; 
+}
+
+.formular input[type="text"],
+.formular select {
+    width: 100%;
+    padding: 16px; 
+    margin-bottom: 30px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.formular input[type="submit"] {
+    width: 100%;
+    padding: 16px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-size: 18px; 
+}

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%; 
+}
+
+.navigation-container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(250, 128, 114, 0.7);
+    padding: 3px;
+    z-index: 10;
+    height: auto;
+}
+.navigation-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navigation-logo{
+    max-height: 50px;
+    cursor: pointer;
+}
+
+.navigation-links a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Bahnschrift", sans-serif;
+    margin: 5px 10px;
+    color: white;
+    line-height: 50px; 
+    height: 50px; 
+    display: inline-block; 
+}
+
+.navigation-links a::after {
+    content: ''; 
+    position: absolute;
+    left: 0; 
+    bottom: 10px;
+    width: 0; 
+    height: 1px; 
+    background-color: white;
+    transition: width 1s ease; 
+}
+
+.navigation-links a:hover::after {
+    width: 100%; 
+}
+                /* Styling for the background images */
+ .background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.background-picture {
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* or background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Add position relative to ensure z-index works */
+}            
+.backgroundimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+ }
+                
+.header-image-overlay {
+    height: 506px;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #000401;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+                
+ 
+.backgroundimage2{
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    z-index: -2;
+}
+.background-picture2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Use relative positioning */
+}
+
+.backgroundimage2 {
+    position: absolute; /* Use absolute positioning */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2; /* Adjust z-index as needed */
+}
+
+.header-image-overlay2 {
+    height: 506px;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #000401;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} 
+
+                /* End of the stylization for the background images */
+                /* Start of the formular stylization*/
+.firstpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px; 
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.formular input[type="text"],
+.formular select {
+    width: 100%;
+    padding: 6px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.formular input[type="submit"] {
+    width: 100%;
+    padding: 8px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+                        /* End of the formular stylization*/
+
+

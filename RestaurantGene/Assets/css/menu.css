@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.background-picture {
+    position: relative; /* Add this line */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;    
+}    
+
+.background-picture img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: block; 
+    position: absolute;
+    z-index: -10;
+}
+.menu{
+    position: absolute; 
+    top: 200px; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    z-index: 1; 
+}
+.entire-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.Crab-Products {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2{
+        font-family: "Bahnschrift", sans-serif;
+        font-size: 34px;
+        color: black;
+    }
+}
+
+
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.items1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.items2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.items3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.items4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.item {
+    border: 2px solid black ;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 350px;
+    margin-left: 25px;
+    text-align: center;
+    h2{
+        font-family: "Bahnschrift", sans-serif;
+        color: black;
+        font-size: 24px;
+    }
+    img {
+        max-width: 350px;
+        max-height: 160px;
+    }
+}
+
+.item:hover{
+    transform: translateY(-2px);
+    transition: 0.5s ease;
+}
+.price {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 25px;
+    p{
+        padding: 2px;
+    }
+    .pret{
+        color: rgb(235, 79, 110);
+    }
+}
+
+
+.drinks {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    img {
+        margin-top: 25px;
+        height:100px;
+        width: 215px;
+        margin-left: 20px;
+        opacity: 0.5;
+    }
+    img:hover{
+        opacity: 1;
+        transition: 1s ease;
+    }
+}
